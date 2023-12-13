@@ -62,6 +62,24 @@
             <br>
             <input type="submit" value="send">
         </form>
+
+
+        <h2>С помощью цикла и функции получения случайных чисел сгенерируйте список <ul>, содержащий случайные трехзначные числа. Размер списка также случаен.
+
+            <?php
+
+            function getRandomNumber() {
+                    return rand(100, 999);
+            }
+
+            $randomListSize = rand(2, 10);
+            echo '<ul>';
+            for ($i = 0; $i < $randomListSize; $i++) {
+                echo sprintf('<li style="list-style-type:upper-roman">' . getRandomNumber() . '</li>' );
+            }
+            echo '</ul>';
+            ?>
+        </h2>
     </div>
 
     <script></script>
