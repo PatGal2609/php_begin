@@ -8,7 +8,7 @@
 <body>
     
         <?php  
-        $age = $_POST['age'];
+        $age = @$_POST['age'];
         function isNumeric($age) {
             if($age <= 0 || $age >= 120) 
                 echo '<span style="color: red"><em>Данные введены не верно</em></span>';
