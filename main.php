@@ -14,7 +14,8 @@
             margin: 150px auto;
             text-align: center;
         }
-        table{
+
+        table {
             margin-left: auto;
             margin-right: auto;
         }
@@ -51,7 +52,18 @@
             </table>
             <input type="submit" value="send">
         </form>
+        <br><br><br>
+
+        <h2> Создайте форму с одним полем – возраст пользователя в годах. Проверьте с помощью функции is_numeric() введено ли число. Проверьте является ли число допустимым (не отрицательным и меньше 120). Если с возрастом все в порядке, выведите его на следующей странице. Если что-то введено не правильно, выведите на следующей странице сообщение об ошибке.</h2>
+        <form action="showAge.php" method="post">
+            <label>Ваш возраст:
+                <input type="number" name="age">
+            </label>
+            <br>
+            <input type="submit" value="send">
+        </form>
     </div>
+
     <script></script>
 </body>
 
